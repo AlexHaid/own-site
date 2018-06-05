@@ -1,0 +1,30 @@
+.content
+  padding-bottom: $content_padding
+  flex: 1 0 auto
+  .inner
+    @include clearfix
+  a
+    color: $link
+  p
+    line-height: 22px
+    margin-bottom: $mbp
+    &:last-child
+      margin-bottom: 0
+
+  ul, ol
+    padding-left: 25px
+    list-style: none
+
+    li
+      margin-bottom: $mbli
+      &:before
+        display: inline-block
+        content: '\2022'
+        margin-right: 10px
+        color: $link
+  .maincol
+    float: left
+    position: relative
+    width: 100%
+    z-index: 1
+    padding-left: $maincol_position

@@ -1,0 +1,37 @@
+doctype html
+html
+	head
+		meta(http-equiv="Content-Type",content="text/html; charset=UTF-8")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title
+		meta(description='' content='')
+		meta(keywords='' content='')
+		link(rel="stylesheet" href="css/screen.css")
+		link(rel='icon', href='/favicon.ico')
+	body.index
+		header
+			block header
+		.menu
+			.inner
+				block menu
+		.content
+			.inner
+				block breadcrumb
+					.breadcrumbs
+						a(href="/")
+							span Главная
+						block PageBread
+							span Инерная
+				block leftMenu
+				.maincol
+					block content
+		footer
+			.inner
+				block footer
+		div(id="scrollup")
+		//- кнопка scrollup, которая выполняет функцию "Наверх", работает со скриптом scrollup.js
+		//- script(src="js/jquery.min.js") - подключение jquery 1.12.2
+		//- script(src="js/jquery.bxslider.min.js") - подключение слайдера (отключаем, если не нужен)
+		//- script(src="js/touch.js") - подключение галереи Touch (отключаем, если не нужен)
+		//- script(src="js/scrollup.js") - подключение скрипта, который выполняет Scroll вверх на кнопку
+		script(src="js/scripts.js")
